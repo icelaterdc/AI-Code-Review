@@ -4,25 +4,6 @@ AI Code Review Pro is a powerful, extensible CLI tool and GitHub Action that aut
 
 ---
 
-## 🚀 Table of Contents
-
-1. [Features](#features)
-2. [Prerequisites](#prerequisites)
-3. [Installation](#installation)
-4. [Quick Start](#quick-start)
-5. [CLI Usage](#cli-usage)
-6. [GitHub Action Integration](#github-action-integration)
-7. [Configuration](#configuration)
-8. [Plugin Development](#plugin-development)
-9. [Outputs & Reports](#outputs--reports)
-10. [Logging & Metrics](#logging--metrics)
-11. [Testing](#testing)
-12. [Contributing](#contributing)
-13. [License](#license)
-14. [FAQ](#faq)
-
----
-
 ## 🛠️ Features
 
 * **Modular Architecture**: Core engine, CLI layer, plugin system and output handlers are decoupled.
@@ -124,34 +105,6 @@ Options:
   ```bash
   npx ai-review-pro plugin:install @my-org/review-plugin-security
   ```
-
----
-
-## 🤝 GitHub Action Integration
-
-Add `.github/workflows/ci.yml` with:
-
-```yaml
-name: CI & AI Review
-on:
-  pull_request:
-    types: [opened, synchronize, reopened]
-jobs:
-  review:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
-        with:
-          node-version: '18'
-      - run: npm install
-      - name: AI Code Review
-        env:
-          OPENAI_API_KEY: \${{ secrets.OPENAI_API_KEY }}
-        run: npx ai-review-pro review . --output markdown
-```
-
-The action will post a markdown summary as a comment on the pull request.
 
 ---
 
