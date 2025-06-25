@@ -31,8 +31,8 @@ AI Code Review Pro is a powerful, extensible CLI tool and GitHub Action that aut
 1. **Clone the repository**
 
    ```bash
-   git clone https://github.com/your-org/ai-review-pro.git
-   cd ai-review-pro
+   git clone https://github.com/icelaterdc/AI-Code-Review-Pro.git
+   cd AI-Code-Review-Pro
    ```
 2. **Install dependencies**
 
@@ -57,12 +57,12 @@ AI Code Review Pro is a powerful, extensible CLI tool and GitHub Action that aut
 1. **Initialize default configuration**
 
    ```bash
-   npx ai-review-pro init
+   npx AI-Code-Review-Pro init
    ```
 2. **Run a review** on your source folder
 
    ```bash
-   npx ai-review-pro review src/ --output html,json
+   npx AI-Code-Review-Pro review src/ --output html,json
    ```
 3. **View report**
 
@@ -93,17 +93,17 @@ Options:
 * **Review single file**
 
   ```bash
-  npx ai-review-pro review src/index.js
+  npx AI-Code-Review-Pro review src/index.js
   ```
 * **Review with JSON output**
 
   ```bash
-  npx ai-review-pro review src/ -o json
+  npx AI-Code-Review-Pro review src/ -o json
   ```
 * **Install community plugin**
 
   ```bash
-  npx ai-review-pro plugin:install @my-org/review-plugin-security
+  npx AI-Code-Review-Pro plugin:install @my-org/review-plugin-security
   ```
 
 ---
