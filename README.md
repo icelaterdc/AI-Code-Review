@@ -31,8 +31,8 @@ AI Code Review Pro is a powerful, extensible CLI tool and GitHub Action that aut
 1. **Clone the repository**
 
    ```bash
-   git clone https://github.com/icelaterdc/AI-Code-Review-Pro.git
-   cd AI-Code-Review-Pro
+   git clone https://github.com/nuekkis/AI-Code-Review.git
+   cd AI-Code-Review
    ```
 2. **Install dependencies**
 
